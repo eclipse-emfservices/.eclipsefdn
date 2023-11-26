@@ -3,9 +3,10 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-emfservices') {
   settings+: {
     dependabot_security_updates_enabled_for_new_repositories: false,
-    description: "",
+    description: "Generic libraries extending the core EMF framework",
     members_can_change_project_visibility: false,
     name: "Eclipse EMF Services",
+    blog: "https://projects.eclipse.org/projects/modeling.emfservices",
     packages_containers_internal: false,
     packages_containers_public: false,
     readers_can_create_discussions: true,
@@ -39,7 +40,7 @@ orgs.newOrg('eclipse-emfservices') {
       dependabot_alerts_enabled: false,
       has_projects: false,
       has_wiki: false,
-      homepage: "",
+      homepage: "https://projects.eclipse.org/projects/modeling.emfservices",
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           requires_pull_request: false,
@@ -54,7 +55,7 @@ orgs.newOrg('eclipse-emfservices') {
       },
     },
     orgs.newRepo('emf-transaction') {
-      allow_merge_commit: true,
+      allow_squash_merge: false,
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
@@ -89,6 +90,7 @@ orgs.newOrg('eclipse-emfservices') {
       dependabot_alerts_enabled: false,
       description: "EMF Validation extends the core validation support of EMF",
       has_projects: false,
+      has_wiki: false,
       homepage: "https://projects.eclipse.org/projects/modeling.emfservices",
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
