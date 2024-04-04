@@ -6,7 +6,6 @@ orgs.newOrg('eclipse-emfservices') {
     description: "Generic libraries extending the core EMF framework",
     name: "Eclipse EMF Services",
     blog: "https://projects.eclipse.org/projects/modeling.emfservices",
-    readers_can_create_discussions: true,
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
