@@ -42,8 +42,6 @@ orgs.newOrg('eclipse-emfservices') {
           requires_linear_history: true,
         },
       ],
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         actions_can_approve_pull_request_reviews: false,
@@ -65,8 +63,6 @@ orgs.newOrg('eclipse-emfservices') {
           requires_linear_history: true,
         },
       ],
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipse",
         "emf",
@@ -93,8 +89,6 @@ orgs.newOrg('eclipse-emfservices') {
           requires_linear_history: true,
         },
       ],
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "eclipse",
         "emf",
