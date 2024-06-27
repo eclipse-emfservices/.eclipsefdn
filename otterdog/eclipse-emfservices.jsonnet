@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-emfservices') {
   settings+: {
-    dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Generic libraries extending the core EMF framework",
     name: "Eclipse EMF Services",
     blog: "https://projects.eclipse.org/projects/modeling.emfservices",
