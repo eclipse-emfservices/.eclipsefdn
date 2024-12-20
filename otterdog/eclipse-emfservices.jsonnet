@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-emfservices') {
+orgs.newOrg('modeling.emfservices', 'eclipse-emfservices') {
   settings+: {
     description: "Generic libraries extending the core EMF framework",
     name: "Eclipse EMF Services",
